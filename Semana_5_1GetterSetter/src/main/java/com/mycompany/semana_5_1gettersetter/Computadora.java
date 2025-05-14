@@ -68,14 +68,15 @@ public class Computadora {
         this.monitor = monitor;
     }
 
-    public void sistema() {
+    public String getSistema() {
         String sistem;
         switch (procesador.toLowerCase()) {
             case "intel", "amd":
-                System.out.println("Windows");
-                break;
+                return "Windows";
             case "m1", "m2", "m3":
-                System.out.println("IOS");
+                return "IOS";
+            default:
+                return "Desconocido";
         }
     }
 }
