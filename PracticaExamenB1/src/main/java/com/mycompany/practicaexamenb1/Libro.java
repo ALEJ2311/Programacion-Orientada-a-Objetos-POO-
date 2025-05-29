@@ -58,7 +58,7 @@ public class Libro {
         return anoPubli;
     }
     
-    public boolean esAntiguo(){
+    public boolean getAntiguedad(){
         if(anoPubli < 2000){
             return true;
         }else{

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.practicaexamenb1;
 
 import java.util.Scanner;
@@ -74,6 +71,17 @@ public class Grafica {
         System.out.println("Nombre: " + grafica.getNomGrafica());
         System.out.println("Serie: " + grafica.getSerieGr());
         System.out.println("Numero de Gigas: " + grafica.getnGigasG() + " GB");
-        System.out.println("Procesador Suguerido: " + grafica.getTProce());
+        String nGr = grafica.getNomGrafica();
+        switch(nGr.toLowerCase()){
+            case "nvidia", "rtx":
+                System.out.println("Intel");
+                break;
+            case "ryzen":
+                System.out.println("AMD");
+                break;
+            default:
+                System.out.println("No encontado");
+        }
+        //System.out.println("Procesador Suguerido: " + grafica.getTProce());
     }
 }
