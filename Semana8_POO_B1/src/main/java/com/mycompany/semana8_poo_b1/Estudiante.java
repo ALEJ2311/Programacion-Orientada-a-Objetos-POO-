@@ -9,5 +9,7 @@ package com.mycompany.semana8_poo_b1;
  * @author Personal
  */
 public class Estudiante {
+    private String nombre;
+    private int ciclo;
     
 }
