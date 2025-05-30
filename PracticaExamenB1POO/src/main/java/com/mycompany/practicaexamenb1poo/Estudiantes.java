@@ -133,7 +133,7 @@ public class Estudiantes implements Serializable  {
         int bandera = 2;
         int multi = 0;
         int sum = 0;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 10; i++) {
             numeros[i] = Character.getNumericValue(cedula.charAt(i));
         }
         for (int i = 0; i < 9; i++) {
@@ -146,6 +146,7 @@ public class Estudiantes implements Serializable  {
             } else {
                 if (bandera == 1) {
                     multi = numeros[i];
+                    bandera = 2;
                 }
             }
             sum += multi;
