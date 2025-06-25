@@ -25,7 +25,7 @@ public class IngresoDatosLibro {
         System.out.println("Ingrese el año de publicacion: ");
         libro.setAnoPubli(tcl.nextInt());
         
-        if(libro.esAntiguo()){
+        if(libro.getAntiguedad()){
             System.out.println("El libro es Antiguo");
         }else{
             System.out.println("El libro no es Antiguo");
